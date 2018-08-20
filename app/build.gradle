@@ -33,3 +33,5 @@ dependencies {
     compile project(':libraryBus')
     compile project(':libraryApi')
 }
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.sklim0221'
