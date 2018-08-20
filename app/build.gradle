@@ -4,6 +4,7 @@ apply plugin: 'me.tatarka.retrolambda' // ----- add
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
+
     defaultConfig {
         applicationId "kr.co.sbproject.app"
         minSdkVersion 19
@@ -30,8 +31,8 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     //테스트
     testCompile 'junit:junit:4.12'
-    compile project(':libraryBus')
-    compile project(':libraryApi')
+    compile project(':bus')
+    compile project(':api')
 }
 apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.sklim0221'
