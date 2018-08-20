@@ -27,3 +27,5 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.4.2'
     compile 'com.squareup.okhttp3:logging-interceptor:3.4.2'
 }
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.sklim0221'

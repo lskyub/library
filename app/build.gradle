@@ -34,5 +34,3 @@ dependencies {
     compile project(':bus')
     compile project(':api')
 }
-apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.sklim0221'
