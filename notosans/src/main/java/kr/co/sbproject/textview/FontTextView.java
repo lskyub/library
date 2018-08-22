@@ -40,19 +40,13 @@ public class FontTextView extends TextView {
                 this.setTypeface(Typeface.createFromAsset(context.getAssets(), "NotoSansCJKkr-Light.otf"));
                 break;
             case 2:
-                this.setTypeface(Typeface.createFromAsset(context.getAssets(), "NotoSansCJKkr-DemiLight.otf"));
-                break;
-            case 3:
                 this.setTypeface(Typeface.createFromAsset(context.getAssets(), "NotoSansCJKkr-Regular.otf"));
                 break;
-            case 4:
+            case 3:
                 this.setTypeface(Typeface.createFromAsset(context.getAssets(), "NotoSansCJKkr-Medium.otf"));
                 break;
-            case 5:
+            case 4:
                 this.setTypeface(Typeface.createFromAsset(context.getAssets(), "NotoSansCJKkr-Bold.otf"));
-                break;
-            case 6:
-                this.setTypeface(Typeface.createFromAsset(context.getAssets(), "NotoSansCJKkr-Black.otf"));
                 break;
         }
     }
