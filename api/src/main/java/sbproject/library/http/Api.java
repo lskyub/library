@@ -15,6 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class Api {
     private static Api instance = null;
+    private static String mBaseUrl;
     private final Retrofit retrofit;
 
     /**
@@ -23,8 +24,9 @@ public class Api {
      * @param baseUrl the base url
      */
     public static synchronized Api createInstance(String baseUrl) {
-        if (instance == null) {
+        if (instance == null || (mBaseUrl != null && !mBaseUrl.equals(baseUrl))) {
             instance = new Api(baseUrl);
+            mBaseUrl = baseUrl;
         }
         return instance;
     }
